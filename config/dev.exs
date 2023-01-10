@@ -2,10 +2,11 @@ import Config
 
 # Configure your database
 config :light_studio, LightStudio.Repo,
-  username: "postgres",
-  password: "postgres",
-  hostname: "localhost",
-  database: "light_studio_dev",
+  username: "edr",
+  password: "H@bana2019*",
+  hostname: "127.0.0.1",
+  database: "light_studio",
+  port:     45432,
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
@@ -19,7 +20,7 @@ config :light_studio, LightStudio.Repo,
 config :light_studio, LightStudioWeb.Endpoint,
   # Binding to loopback ipv4 address prevents access from other machines.
   # Change to `ip: {0, 0, 0, 0}` to allow access from other machines.
-  http: [ip: {127, 0, 0, 1}, port: 4000],
+  http: [ip: {127, 0, 0, 1}, port: 4002],
   check_origin: false,
   code_reloader: true,
   debug_errors: true,
